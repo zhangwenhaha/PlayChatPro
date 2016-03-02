@@ -43,8 +43,10 @@
     _comments = comments;
     
     // 头像的图片
-    [self.profileImagView sd_setImageWithURL:[NSURL URLWithString:comments.user.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
-        self.profileImagView.image = [image cicrleimage];
+    
+    UIImage *placeholderImage = [UIImage imageNamed:@"defaultUserIcon"];
+    [self.profileImagView sd_setImageWithURL:[NSURL URLWithString:comments.user.profile_image] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        self.profileImagView.image = image ? [image cicrleimage] : placeholderImage;
     }];
     
     // 性别

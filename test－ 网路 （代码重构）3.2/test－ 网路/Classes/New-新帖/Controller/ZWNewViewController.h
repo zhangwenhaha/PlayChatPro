@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ZWNewViewController : UIViewController
+#import "ZWeSsenceViewController.h"
+@interface ZWNewViewController : ZWeSsenceViewController
 
 @end

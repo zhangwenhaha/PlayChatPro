@@ -103,9 +103,10 @@
     self.SinaImageView.hidden = !topic.isSina_v;
     
     // 设置其他控件
-    [self.headerImageVIew sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+    UIImage *placeholderImage = [UIImage imageNamed:@"defaultUserIcon"];
+    [self.headerImageVIew sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:placeholderImage completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
         
-        self.headerImageVIew.image = [image cicrleimage];
+        self.headerImageVIew.image = image ? [image cicrleimage] : placeholderImage;
     }];
     
     // 设置名字

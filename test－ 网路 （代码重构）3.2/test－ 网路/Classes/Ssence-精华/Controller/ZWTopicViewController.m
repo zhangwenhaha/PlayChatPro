@@ -7,6 +7,7 @@
 //
 
 #import "ZWTopicViewController.h"
+#import "ZWNewViewController.h"
 #import "ZWTopicModel.h"
 #import "AFNetworking.h"
 #import "UIImageView+WebCache.h"
@@ -14,6 +15,7 @@
 #import "MJRefresh.h"
 #import "ZWTopicCellTableViewCell.h"
 #import "ZWCommentViewController.h"
+
 @interface ZWTopicViewController ()
 /** 模型数组 */
 @property (nonatomic,strong) NSMutableArray *topics;
@@ -85,6 +87,12 @@ static NSString * const ZWTopicID = @"topic";
     self.tableView.mj_footer = [MJRefreshBackNormalFooter footerWithRefreshingTarget:self refreshingAction:@selector(loadMoreTopic)];
 }
 
+#pragma mark - a参数
+- (NSString *)a{
+
+    return [self.parentViewController isKindOfClass:[ZWNewViewController class]] ? @"newlist" : @"list";
+}
+
 #pragma mark - 数据处理
 /**
  * 加载新的帖子数据
@@ -96,7 +104,7 @@ static NSString * const ZWTopicID = @"topic";
     
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     self.parmas = parameters;
@@ -144,7 +152,7 @@ static NSString * const ZWTopicID = @"topic";
     
     // 请求参数
     NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"list";
+    parameters[@"a"] = self.a;
     parameters[@"c"] = @"data";
     parameters[@"type"] = @(self.type);
     parameters[@"page"] = @(++self.page);

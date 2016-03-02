@@ -88,6 +88,11 @@ static NSString * const ZWCommentID = @"comment";
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+            return [self.tableview.mj_footer endRefreshingWithNoMoreData];
+
+        }
+        
         // 最新评论
          NSArray *lastComments = [ZWTopicComment mj_objectArrayWithKeyValuesArray:responseObject[@"data"]];
         
@@ -136,6 +141,10 @@ static NSString * const ZWCommentID = @"comment";
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
       
+        if (![responseObject isKindOfClass:[NSDictionary class]]) {
+           return  [self.tableview.mj_header endRefreshing];;
+        }
+        
         // 最热评论
         self.hotComment = [ZWTopicComment mj_objectArrayWithKeyValuesArray:responseObject[@"hot"]];
         

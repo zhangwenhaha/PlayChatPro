@@ -304,7 +304,54 @@ static NSString * const ZWCommentID = @"comment";
 }
 
 #pragma mark - tableviewdelegate
+
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView{
     [self.view endEditing:YES];
+    
+    // 让tableview滚动时使Menu消失
+    [[UIMenuController sharedMenuController]setMenuVisible:NO animated:YES];
+    
 }
+
+#pragma mark - MenuController的处理
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    // 获得被点击的cell
+    ZWCommenCell *cell = (ZWCommenCell *)[tableView cellForRowAtIndexPath:indexPath];
+    
+    // 出现第一个响应者
+    [cell becomeFirstResponder];
+    
+    // 显示MenuController
+    UIMenuController *menu = [UIMenuController sharedMenuController];
+    
+    // 添加MenuItem
+    UIMenuItem *ding = [[UIMenuItem alloc]initWithTitle:@"顶" action:@selector(ding:)];
+    
+    UIMenuItem *replay = [[UIMenuItem alloc]initWithTitle:@"回复  " action:@selector(replay:)];
+    
+    UIMenuItem *cai = [[UIMenuItem alloc]initWithTitle:@"举报" action:@selector(cai:)];
+    menu.menuItems = @[ding,replay,cai];
+    
+    // 设置menu显示的位置
+    CGRect rect = CGRectMake(80, cell.height * 0.5, cell.width, cell.height * 0.5);
+    [menu setTargetRect:rect inView:cell];
+    [menu setMenuVisible:YES animated:YES];
+    
+}
+#pragma mark - MenuItem处理
+
+- (void)ding:(UIMenuController *)menu{
+    ZWLogFunc;
+}
+
+- (void)replay:(UIMenuController *)menu{
+    ZWLogFunc;
+}
+
+- (void)cai:(UIMenuController *)menu{
+    ZWLogFunc;
+}
+
 @end

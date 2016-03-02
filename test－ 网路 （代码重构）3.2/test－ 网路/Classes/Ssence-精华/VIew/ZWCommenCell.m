@@ -25,6 +25,14 @@
 
 @implementation ZWCommenCell
 
+- (BOOL)canBecomeFirstResponder{
+    return YES;
+}
+
+- (BOOL)canPerformAction:(SEL)action withSender:(id)sender{
+    return NO;
+}
+
 - (void)awakeFromNib {
     
     self.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mainCellBackground"]];

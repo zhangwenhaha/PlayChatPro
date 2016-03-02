@@ -20,6 +20,7 @@
     // 创建窗口
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
+    
     // 设置窗口的根控制器
     ZWTabBarViewController *zwTabBarVC = [[ZWTabBarViewController alloc]init];
     self.window.rootViewController = zwTabBarVC;

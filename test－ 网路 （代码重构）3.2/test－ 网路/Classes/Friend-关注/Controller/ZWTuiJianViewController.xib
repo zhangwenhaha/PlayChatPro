@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZWTuiJianViewController">
+            <connections>
+                <outlet property="categoryTableView" destination="Db7-Ng-OHW" id="68Q-aK-2dL"/>
+                <outlet property="userTableview" destination="RpD-dQ-2TP" id="GRQ-Ty-cyK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="484" height="588"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Db7-Ng-OHW">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="70" id="CLj-oA-QlZ"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="CLj-oA-QlZ"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=regular-widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="CLj-oA-QlZ"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UO9-yD-Ptv"/>
+                        <outlet property="delegate" destination="-1" id="a3N-Ha-UTf"/>
+                    </connections>
+                </tableView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RpD-dQ-2TP">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ZcO-rR-gwj"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RpD-dQ-2TP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="6LM-mk-ljd"/>
+                <constraint firstAttribute="trailing" secondItem="RpD-dQ-2TP" secondAttribute="trailing" id="9pw-ID-Qwx"/>
+                <constraint firstAttribute="bottom" secondItem="Db7-Ng-OHW" secondAttribute="bottom" id="Dqs-Bg-EDb"/>
+                <constraint firstAttribute="bottom" secondItem="RpD-dQ-2TP" secondAttribute="bottom" id="OcQ-Vj-cU0"/>
+                <constraint firstItem="RpD-dQ-2TP" firstAttribute="leading" secondItem="Db7-Ng-OHW" secondAttribute="trailing" id="cxI-28-2Aj"/>
+                <constraint firstItem="Db7-Ng-OHW" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j1i-Zu-KCE"/>
+                <constraint firstItem="Db7-Ng-OHW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uZK-a8-JiU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="Db7-Ng-OHW"/>
+                    <exclude reference="RpD-dQ-2TP"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Dqs-Bg-EDb"/>
+                    <exclude reference="j1i-Zu-KCE"/>
+                    <exclude reference="uZK-a8-JiU"/>
+                    <exclude reference="6LM-mk-ljd"/>
+                    <exclude reference="9pw-ID-Qwx"/>
+                    <exclude reference="OcQ-Vj-cU0"/>
+                    <exclude reference="cxI-28-2Aj"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=regular-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="Db7-Ng-OHW"/>
+                    <include reference="RpD-dQ-2TP"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Dqs-Bg-EDb"/>
+                    <include reference="j1i-Zu-KCE"/>
+                    <include reference="uZK-a8-JiU"/>
+                    <include reference="6LM-mk-ljd"/>
+                    <include reference="9pw-ID-Qwx"/>
+                    <include reference="OcQ-Vj-cU0"/>
+                    <include reference="cxI-28-2Aj"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="60.5" y="220.5"/>
+        </view>
+    </objects>
+</document>

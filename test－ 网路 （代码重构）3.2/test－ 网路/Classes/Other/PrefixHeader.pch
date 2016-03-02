@@ -1,0 +1,35 @@
+//
+//  PrefixHeader.pch
+//  test－ 网路
+//
+//  Created by zw on 16/1/27.
+//  Copyright © 2016年 zw. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "UIView+ZWExtension.h"
+#import "UIBarButtonItem+ZWExtension.h"
+#import "ZWConst.h"
+#import "NSDate+ZWExtension.h"
+
+#ifdef DEBUG
+#define ZWLog(...) NSLog(__VA_ARGS__)
+#else
+#define ZWLog(...)
+#endif
+
+
+#define ZWScreenW [UIScreen mainScreen].bounds.size.width
+#define ZWScreenH [UIScreen mainScreen].bounds.size.height
+
+
+#define ZWLogFunc ZWLog(@"%s", __func__)
+
+#define ZWRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define ZWGlobalBg ZWRGBColor(223, 223, 223)
+
+
+#endif /* PrefixHeader_pch */

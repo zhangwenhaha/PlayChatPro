@@ -13,6 +13,7 @@
 #import "UIBarButtonItem+ZWExtension.h"
 #import "ZWConst.h"
 #import "NSDate+ZWExtension.h"
+#import "UIImage+ZWExtension.h"
 
 #ifdef DEBUG
 #define ZWLog(...) NSLog(__VA_ARGS__)

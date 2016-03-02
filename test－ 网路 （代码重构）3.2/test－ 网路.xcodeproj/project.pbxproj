@@ -120,6 +120,7 @@
 		DBF5D59C1C840A5F00D52D00 /* ZWPlayVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF5D59A1C840A5F00D52D00 /* ZWPlayVideoViewController.m */; };
 		DBF5D59D1C840A5F00D52D00 /* ZWPlayVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF5D59B1C840A5F00D52D00 /* ZWPlayVideoViewController.xib */; };
 		DBF7E09F1C7C84FE0099E137 /* ZWVerticalBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF7E09E1C7C84FE0099E137 /* ZWVerticalBtn.m */; };
+		DBFF2FF51C86D0B5009AED47 /* UIImage+ZWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFF2FF41C86D0B5009AED47 /* UIImage+ZWExtension.m */; };
 		DBFF33E71C847E09003805A2 /* ZWTopicUser.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFF33E61C847E09003805A2 /* ZWTopicUser.m */; };
 		DBFF33EA1C847FDC003805A2 /* ZWTopicComment.m in Sources */ = {isa = PBXBuildFile; fileRef = DBFF33E91C847FDC003805A2 /* ZWTopicComment.m */; };
 /* End PBXBuildFile section */
@@ -357,6 +358,8 @@
 		DBF5D59B1C840A5F00D52D00 /* ZWPlayVideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWPlayVideoViewController.xib; sourceTree = "<group>"; };
 		DBF7E09D1C7C84FE0099E137 /* ZWVerticalBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWVerticalBtn.h; sourceTree = "<group>"; };
 		DBF7E09E1C7C84FE0099E137 /* ZWVerticalBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWVerticalBtn.m; sourceTree = "<group>"; };
+		DBFF2FF31C86D0B5009AED47 /* UIImage+ZWExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZWExtension.h"; sourceTree = "<group>"; };
+		DBFF2FF41C86D0B5009AED47 /* UIImage+ZWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZWExtension.m"; sourceTree = "<group>"; };
 		DBFF33E51C847E09003805A2 /* ZWTopicUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTopicUser.h; sourceTree = "<group>"; };
 		DBFF33E61C847E09003805A2 /* ZWTopicUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTopicUser.m; sourceTree = "<group>"; };
 		DBFF33E81C847FDC003805A2 /* ZWTopicComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTopicComment.h; sourceTree = "<group>"; };
@@ -605,6 +608,8 @@
 				DBA8A7C11C5A07E000D1C0F8 /* UIView+ZWExtension.m */,
 				DB78B4561C7F0EDF0096C2E3 /* NSDate+ZWExtension.h */,
 				DB78B4571C7F0EDF0096C2E3 /* NSDate+ZWExtension.m */,
+				DBFF2FF31C86D0B5009AED47 /* UIImage+ZWExtension.h */,
+				DBFF2FF41C86D0B5009AED47 /* UIImage+ZWExtension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -1101,6 +1106,7 @@
 				DBE805831C6D59CF00258079 /* ZWTuiJianUser.m in Sources */,
 				DBEB69C81C5F15B5008C1319 /* NSString+MJExtension.m in Sources */,
 				DBF211441C735F9C00E48DC2 /* MJRefreshBackFooter.m in Sources */,
+				DBFF2FF51C86D0B5009AED47 /* UIImage+ZWExtension.m in Sources */,
 				DBEB69C41C5F15B5008C1319 /* NSObject+MJClass.m in Sources */,
 				DBEB69C61C5F15B5008C1319 /* NSObject+MJKeyValue.m in Sources */,
 				DBF2114C1C735F9C00E48DC2 /* MJRefreshBackNormalFooter.m in Sources */,

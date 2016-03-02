@@ -14,6 +14,7 @@
 #import "ZWTopicVideoView.h"
 #import "ZWTopicComment.h"
 #import "ZWTopicUser.h"
+
 @interface ZWTopicCellTableViewCell()
 /** 头像 */
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageVIew;
@@ -89,6 +90,10 @@
 - (void)awakeFromNib {
     
     self.backgroundView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"mainCellBackground"]];
+    
+    // 图片的圆角处理 这种方法不好，容易使得程序变卡顿
+//    self.headerImageVIew.layer.cornerRadius = self.headerImageVIew.width * 0.5;
+//    self.headerImageVIew.layer.masksToBounds = YES;
 }
 
 - (void)setTopic:(ZWTopicModel *)topic{
@@ -98,7 +103,10 @@
     self.SinaImageView.hidden = !topic.isSina_v;
     
     // 设置其他控件
-    [self.headerImageVIew sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]];
+    [self.headerImageVIew sd_setImageWithURL:[NSURL URLWithString:topic.profile_image] placeholderImage:[UIImage imageNamed:@"defaultUserIcon"]completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, NSURL *imageURL) {
+        
+        self.headerImageVIew.image = [image cicrleimage];
+    }];
     
     // 设置名字
     self.nameLabel.text = topic.name;

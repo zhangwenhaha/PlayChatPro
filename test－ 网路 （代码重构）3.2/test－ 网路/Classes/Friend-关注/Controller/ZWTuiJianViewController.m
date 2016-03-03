@@ -131,7 +131,7 @@ static NSString * const ZWUserID = @"user";
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         
         //[NSThread sleepForTimeInterval:3.0f];
-        [SVProgressHUD showErrorWithStatus:@"网络连接失败，请检查网络设置"];
+        [SVProgressHUD showErrorWithStatus:@"服务器出错啦，正在抢修中。。"];
     }];
 
 }

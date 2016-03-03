@@ -38,8 +38,7 @@ static NSString * cellID = @"me";
 - (void)setUpNav{
     // 设置导航栏的内容
     self.navigationItem.title = @"我的";
-    ZWLog(@"222");
-
+    
     UIBarButtonItem *SettingItem = [UIBarButtonItem itemWithImage:@"mine-setting-icon" highimage:@"mine-setting-icon-click" target:self action:@selector(SettingClick)];
     
     self.navigationItem.rightBarButtonItem = SettingItem;
@@ -68,30 +67,12 @@ static NSString * cellID = @"me";
     // 调整inset
     self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
     
+    self.tableView.contentSize = CGSizeMake(0, 500);
+    
     // 设置footerView
     self.tableView.tableFooterView = [[ZWMeFooterView alloc]init];
     
     
-    // 请求参数
-    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
-    parameters[@"a"] = @"square";
-    parameters[@"c"] = @"topic";
-    
-    // 发送请求
-    [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
-        
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
-        ZWLog(@"%@",responseObject);
-        
-        NSArray *squares = [ZWSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
-        // 创建方块
-        //[self createSquares:squares];
-        
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
-        ZWLog(@"222");
-    }];
 }
 
 - (void)SettingClick{

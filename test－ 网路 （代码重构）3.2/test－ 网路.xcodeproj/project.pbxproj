@@ -30,6 +30,11 @@
 		DB78B4521C7EBE310096C2E3 /* ZWTopicCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB78B4501C7EBE310096C2E3 /* ZWTopicCellTableViewCell.xib */; };
 		DB78B4581C7F0EDF0096C2E3 /* NSDate+ZWExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B4571C7F0EDF0096C2E3 /* NSDate+ZWExtension.m */; };
 		DB78B45B1C7F57BF0096C2E3 /* ZWTopicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB78B45A1C7F57BF0096C2E3 /* ZWTopicViewController.m */; };
+		DB90110E1C87F5F0003CB239 /* ZWSquareButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DB90110D1C87F5F0003CB239 /* ZWSquareButton.m */; };
+		DB9011121C8802B6003CB239 /* ZWMeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9011101C8802B6003CB239 /* ZWMeWebViewController.m */; };
+		DB9011131C8802B6003CB239 /* ZWMeWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB9011111C8802B6003CB239 /* ZWMeWebViewController.xib */; };
+		DB9011191C880C05003CB239 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9011161C880C05003CB239 /* NJKWebViewProgress.m */; };
+		DB90111A1C880C05003CB239 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9011181C880C05003CB239 /* NJKWebViewProgressView.m */; };
 		DB90AEF21C6D5141005137C2 /* ZWTuiJianUserCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB90AEF01C6D5141005137C2 /* ZWTuiJianUserCell.m */; };
 		DB90AEF31C6D5141005137C2 /* ZWTuiJianUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DB90AEF11C6D5141005137C2 /* ZWTuiJianUserCell.xib */; };
 		DB9234A71C8031E5000C57ED /* ZWTopicPictureVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9234A61C8031E5000C57ED /* ZWTopicPictureVIew.m */; };
@@ -189,6 +194,15 @@
 		DB78B4571C7F0EDF0096C2E3 /* NSDate+ZWExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+ZWExtension.m"; sourceTree = "<group>"; };
 		DB78B4591C7F57BF0096C2E3 /* ZWTopicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTopicViewController.h; sourceTree = "<group>"; };
 		DB78B45A1C7F57BF0096C2E3 /* ZWTopicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTopicViewController.m; sourceTree = "<group>"; };
+		DB90110C1C87F5F0003CB239 /* ZWSquareButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSquareButton.h; sourceTree = "<group>"; };
+		DB90110D1C87F5F0003CB239 /* ZWSquareButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSquareButton.m; sourceTree = "<group>"; };
+		DB90110F1C8802B6003CB239 /* ZWMeWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWMeWebViewController.h; sourceTree = "<group>"; };
+		DB9011101C8802B6003CB239 /* ZWMeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWMeWebViewController.m; sourceTree = "<group>"; };
+		DB9011111C8802B6003CB239 /* ZWMeWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWMeWebViewController.xib; sourceTree = "<group>"; };
+		DB9011151C880C05003CB239 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		DB9011161C880C05003CB239 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		DB9011171C880C05003CB239 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		DB9011181C880C05003CB239 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		DB90AEEF1C6D5141005137C2 /* ZWTuiJianUserCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTuiJianUserCell.h; sourceTree = "<group>"; };
 		DB90AEF01C6D5141005137C2 /* ZWTuiJianUserCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTuiJianUserCell.m; sourceTree = "<group>"; };
 		DB90AEF11C6D5141005137C2 /* ZWTuiJianUserCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWTuiJianUserCell.xib; sourceTree = "<group>"; };
@@ -414,6 +428,7 @@
 		DB536F551C5DD8B7007AC0C0 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				DB9011141C880C05003CB239 /* NJKWebViewProgress */,
 				DBF211161C735F9C00E48DC2 /* MJRefresh */,
 				DBE805841C6D5D1300258079 /* SDWebImage */,
 				DBEB69A91C5F15B5008C1319 /* MJExtension */,
@@ -457,6 +472,17 @@
 				DB536F9E1C5DD8E2007AC0C0 /* SVRadialGradientLayer.m */,
 			);
 			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		DB9011141C880C05003CB239 /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				DB9011151C880C05003CB239 /* NJKWebViewProgress.h */,
+				DB9011161C880C05003CB239 /* NJKWebViewProgress.m */,
+				DB9011171C880C05003CB239 /* NJKWebViewProgressView.h */,
+				DB9011181C880C05003CB239 /* NJKWebViewProgressView.m */,
+			);
+			path = NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 		DBA8A7A71C5A07E000D1C0F8 /* Classes */ = {
@@ -541,6 +567,9 @@
 			children = (
 				DBA8A7B01C5A07E000D1C0F8 /* ZWMeViewController.h */,
 				DBA8A7B11C5A07E000D1C0F8 /* ZWMeViewController.m */,
+				DB90110F1C8802B6003CB239 /* ZWMeWebViewController.h */,
+				DB9011101C8802B6003CB239 /* ZWMeWebViewController.m */,
+				DB9011111C8802B6003CB239 /* ZWMeWebViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -561,6 +590,8 @@
 				DBF37E561C87BEBC009FE4F3 /* ZWTMeCell.m */,
 				DBF37E581C87C40D009FE4F3 /* ZWMeFooterView.h */,
 				DBF37E591C87C40D009FE4F3 /* ZWMeFooterView.m */,
+				DB90110C1C87F5F0003CB239 /* ZWSquareButton.h */,
+				DB90110D1C87F5F0003CB239 /* ZWSquareButton.m */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -1084,6 +1115,7 @@
 				DBF5D59D1C840A5F00D52D00 /* ZWPlayVideoViewController.xib in Resources */,
 				DBEB08911C85776300A8067F /* ZWCommenCell.xib in Resources */,
 				DBED06F11C7C4913000ED003 /* ZWLoginRegisterViewController.xib in Resources */,
+				DB9011131C8802B6003CB239 /* ZWMeWebViewController.xib in Resources */,
 				DBEB69A81C5F0B6F008C1319 /* ZWTuiJianCatrgoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1121,6 +1153,7 @@
 				DBE805831C6D59CF00258079 /* ZWTuiJianUser.m in Sources */,
 				DBEB69C81C5F15B5008C1319 /* NSString+MJExtension.m in Sources */,
 				DBF211441C735F9C00E48DC2 /* MJRefreshBackFooter.m in Sources */,
+				DB9011121C8802B6003CB239 /* ZWMeWebViewController.m in Sources */,
 				DBFF2FF51C86D0B5009AED47 /* UIImage+ZWExtension.m in Sources */,
 				DBEB69C41C5F15B5008C1319 /* NSObject+MJClass.m in Sources */,
 				DBEB69C61C5F15B5008C1319 /* NSObject+MJKeyValue.m in Sources */,
@@ -1159,6 +1192,7 @@
 				DBA8A7D31C5A07E000D1C0F8 /* UIBarButtonItem+ZWExtension.m in Sources */,
 				DB9234A71C8031E5000C57ED /* ZWTopicPictureVIew.m in Sources */,
 				DB536FA21C5DD8E2007AC0C0 /* SVRadialGradientLayer.m in Sources */,
+				DB90111A1C880C05003CB239 /* NJKWebViewProgressView.m in Sources */,
 				DBEB69C21C5F15B5008C1319 /* MJPropertyKey.m in Sources */,
 				DB78B45B1C7F57BF0096C2E3 /* ZWTopicViewController.m in Sources */,
 				DB536F691C5DD8C5007AC0C0 /* AFURLSessionManager.m in Sources */,
@@ -1194,6 +1228,7 @@
 				DBE805AE1C6D5D1300258079 /* SDWebImagePrefetcher.m in Sources */,
 				DBF211501C735F9C00E48DC2 /* MJRefreshStateHeader.m in Sources */,
 				DBF37E5A1C87C40D009FE4F3 /* ZWMeFooterView.m in Sources */,
+				DB9011191C880C05003CB239 /* NJKWebViewProgress.m in Sources */,
 				DBFF33EA1C847FDC003805A2 /* ZWTopicComment.m in Sources */,
 				DBEB69C11C5F15B5008C1319 /* MJProperty.m in Sources */,
 				DB78B44A1C7E860F0096C2E3 /* ZWTopicModel.m in Sources */,
@@ -1208,6 +1243,7 @@
 				DBE805AB1C6D5D1300258079 /* SDWebImageDownloader.m in Sources */,
 				DBA8A7D51C5A07E000D1C0F8 /* ZWTabBarViewController.m in Sources */,
 				DBF2114D1C735F9C00E48DC2 /* MJRefreshBackStateFooter.m in Sources */,
+				DB90110E1C87F5F0003CB239 /* ZWSquareButton.m in Sources */,
 				DBF37E5D1C87C80A009FE4F3 /* ZWSquare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

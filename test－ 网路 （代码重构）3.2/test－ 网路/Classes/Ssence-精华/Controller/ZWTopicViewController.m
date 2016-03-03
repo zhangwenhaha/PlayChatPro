@@ -121,6 +121,7 @@ static NSString * const ZWTopicID = @"topic";
         // 存储需要加载下一页数据的参数
         self.maxtime = responseObject[@"info"][@"maxtime"];
         
+        
         // 字典转模型
         self.topics = [ZWTopicModel mj_objectArrayWithKeyValuesArray:responseObject[@"list"]];
         

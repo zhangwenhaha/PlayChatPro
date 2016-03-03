@@ -10,8 +10,8 @@
 #import "AFNetworking.h"
 #import "ZWSquare.h"
 #import "MJExtension.h"
-#import "UIButton+WebCache.h"
-
+#import "ZWSquareButton.h"
+#import "ZWMeWebViewController.h"
 
 @implementation ZWMeFooterView
 
@@ -21,7 +21,24 @@
         
         self.backgroundColor = [UIColor clearColor];
         
+        // 请求参数
+        NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+        parameters[@"a"] = @"square";
+        parameters[@"c"] = @"topic";
         
+        // 发送请求
+        [[AFHTTPSessionManager manager] GET:@"http://api.budejie.com/api/api_open.php" parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+            
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            
+            NSArray *squares = [ZWSquare mj_objectArrayWithKeyValuesArray:responseObject[@"square_list"]];
+            
+            // 创建方块
+            [self createSquares:squares];
+            
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            
+        }];
 
         
     }
@@ -38,20 +55,19 @@
     
     // 宽度和高度
     CGFloat buttonW = ZWScreenW / maxcols;
-    CGFloat buttonH = buttonW;
+    CGFloat buttonH = buttonW ;
     
     for (int i = 0; i <array.count ;i++) {
         // 取出模型
         ZWSquare *square = array[i];
         
         // 创建button
-        UIButton *button = [[UIButton alloc]init];
+        ZWSquareButton *button = [[ZWSquareButton alloc]init];
         
-        // 添加文字
-        [button setTitle:square.name forState:UIControlStateNormal];
+        // 添加点击事件
+        [button addTarget:self action:@selector(ButtonClick:) forControlEvents:UIControlEventTouchUpInside];
         
-        // 添加图片
-        [button sd_setImageWithURL:[NSURL URLWithString:square.icon] forState:UIControlStateNormal];
+        button.square = square;
         
         int col = i % maxcols;
         int row = i / maxcols;
@@ -61,15 +77,35 @@
         button.width = buttonW;
         button.height = buttonH;
         
-        ZWLog(@"%d",array.count);
+        [self addSubview:button];
+        
+        self.height = CGRectGetMaxY(button.frame) + 10;
     }
-   
+
+    // 重绘
+    [self setNeedsDisplay];
 }
 
-// 这个可以试着uiview的背景图片
+// // 这个可以试着uiview的背景图片
 //- (void)drawRect:(CGRect)rect{
 //
 //    [[UIImage imageNamed:@"mainCellBackground"] drawInRect:rect];
 //}
 
+
+- (void)ButtonClick:(ZWSquareButton *)button{
+    
+    if (![button.square.url hasPrefix:@"http"]) return;
+    
+    ZWMeWebViewController *web = [[ZWMeWebViewController alloc]init];
+    web.url = button.square.url;
+    web.title = button.square.name;
+    
+    //  取出当前控制器
+    UITabBarController *tabbarVc = (UITabBarController *)[UIApplication sharedApplication].keyWindow.rootViewController;
+    
+    UINavigationController *nav = (UINavigationController *)tabbarVc.selectedViewController;
+    
+    [nav pushViewController:web animated:YES];
+}
 @end

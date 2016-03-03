@@ -35,12 +35,13 @@
             
             // 创建方块
             [self createSquares:squares];
+
             
         } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
             
         }];
-
         
+
     }
     return self;
 }
@@ -80,9 +81,11 @@
         [self addSubview:button];
         
         self.height = CGRectGetMaxY(button.frame) + 10;
-    }
 
-    // 重绘
+    }
+    
+    self.contentSize = CGSizeMake(ZWScreenW, self.height + 150 );
+       // 重绘
     [self setNeedsDisplay];
 }
 

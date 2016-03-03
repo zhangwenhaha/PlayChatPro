@@ -67,7 +67,7 @@ static NSString * cellID = @"me";
     // 调整inset
     self.tableView.contentInset = UIEdgeInsetsMake(-25, 0, 0, 0);
     
-    self.tableView.contentSize = CGSizeMake(0, 500);
+    // self.tableView.contentSize = CGSizeMake(MAXFLOAT, 1000);
     
     // 设置footerView
     self.tableView.tableFooterView = [[ZWMeFooterView alloc]init];

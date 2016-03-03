@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ZWMeFooterView : UIView
+@interface ZWMeFooterView : UIScrollView
 
 @end

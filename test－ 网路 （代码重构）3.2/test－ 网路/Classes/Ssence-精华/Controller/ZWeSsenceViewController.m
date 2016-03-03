@@ -42,7 +42,6 @@
     // 底部的scrollview
     [self setUpcontentview];
     
-    
 }
 
 /**

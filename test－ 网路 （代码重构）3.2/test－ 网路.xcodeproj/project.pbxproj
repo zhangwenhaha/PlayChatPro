@@ -113,6 +113,9 @@
 		DBF2FFE31C7D39E500234FED /* ZWTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2FFE21C7D39E500234FED /* ZWTextField.m */; };
 		DBF2FFE61C7D5F0600234FED /* ZWPushGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF2FFE51C7D5F0600234FED /* ZWPushGuide.m */; };
 		DBF2FFE81C7D5F1B00234FED /* ZWPushGuide.xib in Resources */ = {isa = PBXBuildFile; fileRef = DBF2FFE71C7D5F1B00234FED /* ZWPushGuide.xib */; };
+		DBF37E571C87BEBC009FE4F3 /* ZWTMeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF37E561C87BEBC009FE4F3 /* ZWTMeCell.m */; };
+		DBF37E5A1C87C40D009FE4F3 /* ZWMeFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF37E591C87C40D009FE4F3 /* ZWMeFooterView.m */; };
+		DBF37E5D1C87C80A009FE4F3 /* ZWSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF37E5C1C87C80A009FE4F3 /* ZWSquare.m */; };
 		DBF400051C4F810100FBD59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF400041C4F810100FBD59A /* Assets.xcassets */; };
 		DBF400131C4F810100FBD59A /* test____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF400121C4F810100FBD59A /* test____Tests.m */; };
 		DBF4001E1C4F810100FBD59A /* test____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DBF4001D1C4F810100FBD59A /* test____UITests.m */; };
@@ -343,6 +346,12 @@
 		DBF2FFE41C7D5F0600234FED /* ZWPushGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWPushGuide.h; sourceTree = "<group>"; };
 		DBF2FFE51C7D5F0600234FED /* ZWPushGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWPushGuide.m; sourceTree = "<group>"; };
 		DBF2FFE71C7D5F1B00234FED /* ZWPushGuide.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZWPushGuide.xib; sourceTree = "<group>"; };
+		DBF37E551C87BEBC009FE4F3 /* ZWTMeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWTMeCell.h; sourceTree = "<group>"; };
+		DBF37E561C87BEBC009FE4F3 /* ZWTMeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWTMeCell.m; sourceTree = "<group>"; };
+		DBF37E581C87C40D009FE4F3 /* ZWMeFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZWMeFooterView.h; path = "test－ 网路/Classes/Me-我/ZWMeFooterView.h"; sourceTree = SOURCE_ROOT; };
+		DBF37E591C87C40D009FE4F3 /* ZWMeFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZWMeFooterView.m; path = "test－ 网路/Classes/Me-我/ZWMeFooterView.m"; sourceTree = SOURCE_ROOT; };
+		DBF37E5B1C87C80A009FE4F3 /* ZWSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZWSquare.h; sourceTree = "<group>"; };
+		DBF37E5C1C87C80A009FE4F3 /* ZWSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZWSquare.m; sourceTree = "<group>"; };
 		DBF400041C4F810100FBD59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF400091C4F810100FBD59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBF4000E1C4F810100FBD59A /* test－ 网路Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "test－ 网路Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -539,6 +548,8 @@
 		DBA8A7B21C5A07E000D1C0F8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				DBF37E5B1C87C80A009FE4F3 /* ZWSquare.h */,
+				DBF37E5C1C87C80A009FE4F3 /* ZWSquare.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -546,6 +557,10 @@
 		DBA8A7B31C5A07E000D1C0F8 /* VIew */ = {
 			isa = PBXGroup;
 			children = (
+				DBF37E551C87BEBC009FE4F3 /* ZWTMeCell.h */,
+				DBF37E561C87BEBC009FE4F3 /* ZWTMeCell.m */,
+				DBF37E581C87C40D009FE4F3 /* ZWMeFooterView.h */,
+				DBF37E591C87C40D009FE4F3 /* ZWMeFooterView.m */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -1157,6 +1172,7 @@
 				DBF7E09F1C7C84FE0099E137 /* ZWVerticalBtn.m in Sources */,
 				DBF211541C735F9C00E48DC2 /* UIScrollView+MJRefresh.m in Sources */,
 				DBEB69BF1C5F15B5008C1319 /* MJExtensionConst.m in Sources */,
+				DBF37E571C87BEBC009FE4F3 /* ZWTMeCell.m in Sources */,
 				DBA8A7DA1C5A17D300D1C0F8 /* ZWNavigationController.m in Sources */,
 				DBEB69A71C5F0B6F008C1319 /* ZWTuiJianCatrgoryCell.m in Sources */,
 				DB536F9F1C5DD8E2007AC0C0 /* SVIndefiniteAnimatedView.m in Sources */,
@@ -1177,6 +1193,7 @@
 				DBF2FFE31C7D39E500234FED /* ZWTextField.m in Sources */,
 				DBE805AE1C6D5D1300258079 /* SDWebImagePrefetcher.m in Sources */,
 				DBF211501C735F9C00E48DC2 /* MJRefreshStateHeader.m in Sources */,
+				DBF37E5A1C87C40D009FE4F3 /* ZWMeFooterView.m in Sources */,
 				DBFF33EA1C847FDC003805A2 /* ZWTopicComment.m in Sources */,
 				DBEB69C11C5F15B5008C1319 /* MJProperty.m in Sources */,
 				DB78B44A1C7E860F0096C2E3 /* ZWTopicModel.m in Sources */,
@@ -1191,6 +1208,7 @@
 				DBE805AB1C6D5D1300258079 /* SDWebImageDownloader.m in Sources */,
 				DBA8A7D51C5A07E000D1C0F8 /* ZWTabBarViewController.m in Sources */,
 				DBF2114D1C735F9C00E48DC2 /* MJRefreshBackStateFooter.m in Sources */,
+				DBF37E5D1C87C80A009FE4F3 /* ZWSquare.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

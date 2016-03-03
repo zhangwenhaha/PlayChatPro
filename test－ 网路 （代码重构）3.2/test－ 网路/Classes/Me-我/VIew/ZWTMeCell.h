@@ -1,13 +1,13 @@
 //
-//  ZWMeViewController.h
+//  ZWTMeCell.h
 //  test－ 网路
 //
-//  Created by zw on 16/1/27.
+//  Created by zw on 16/3/2.
 //  Copyright © 2016年 zw. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface ZWMeViewController : UITableViewController
+@interface ZWTMeCell : UITableViewCell
 
 @end
